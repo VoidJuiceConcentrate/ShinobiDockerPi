@@ -1,7 +1,7 @@
 version: '3'
 services:
   shinobi-sql:
-    image: mysql:5.7
+    image: mariadb:10.11
     volumes:
       - $HOME/ShinobiSQL:/var/lib/mysql
       - ./mysql-init:/docker-entrypoint-initdb.d

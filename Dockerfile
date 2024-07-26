@@ -2,7 +2,7 @@ FROM node:20-bullseye-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ARG SHINOBI_BRANCH=master
+ARG SHINOBI_BRANCH=master
 
 RUN apt-get update && apt-get install -y \
     build-essential \
